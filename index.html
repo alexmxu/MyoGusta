@@ -1,0 +1,8 @@
+ <script src="/socket.io/socket.io.js"></script>
+ <script>
+ var socket = io('http://localhost:3000');
+ var bar1 = document.getElementById('bar1');
+ socket.on('counter', function(counter){
+     bar1.style.width = counter;
+ });
+ <script>
